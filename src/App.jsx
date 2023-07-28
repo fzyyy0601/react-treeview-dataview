@@ -100,69 +100,6 @@ const treeData2 = [
   }
 ];
 
-const treeData3 = [
-  {
-    title: "Results",
-    key: "1",
-    children: [
-      {
-        title: 'Queue-Informed RM',
-        key: '1-1',
-        chileren: [
-          {
-            title: "Mobility",
-            key: "1-1-1",
-            children: [{ title: "Average Travel Time", key: "1-1-1", children: [] },
-            { title: "Average Travel Speed", key: "1-1-2" }]
-          },
-          {
-            title: "Efficiency",
-            key: "1-1-2",
-            children: [{ title: "Sub-subcategory 1.2.1", key: "1-2-1" }]
-          },
-          {
-            title: "Reliability",
-            key: "1-1-3",
-            children: [{ title: "Sub-subcategory 1.3.1", key: "1-3-1" }]
-          },
-          {
-            title: "Safety",
-            key: "1-1-4",
-            children: [{ title: "Sub-subcategory 1.4.1", key: "1-4-1" }]
-          }
-        ]
-      },
-      {
-        title: 'Incident-Aware RM',
-        key: '1-2',
-        chileren: [
-          {
-            title: "Mobility",
-            key: "1-2-1",
-            children: [{ title: "Average Travel Time", key: "1-1-1" },
-            { title: "Average Travel Speed", key: "1-1-2" }]
-          },
-          {
-            title: "Efficiency",
-            key: "1-2-2",
-            children: [{ title: "Sub-subcategory 1.2.1", key: "1-2-1" }]
-          },
-          {
-            title: "Reliability",
-            key: "1-2-3",
-            children: [{ title: "Sub-subcategory 1.3.1", key: "1-3-1" }]
-          },
-          {
-            title: "Safety",
-            key: "1-2-4",
-            children: [{ title: "Sub-subcategory 1.4.1", key: "1-4-1" }]
-          }
-        ]
-      }
-    ]
-  }
-];
-
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null)
@@ -208,8 +145,8 @@ const App = () => {
     <div className='App'>
 
       {/* <h1 className='App-header '>Introduction - Test</h1> */}
-      <button className='btn' onClick={handleClickA}>Switch To Use Case</button>
-      <button className='btn' onClick={handleClickB}>Switch To Results</button>
+      <button className='btn' onClick={handleClickA}>Switch To Tree Data 1</button>
+      <button className='btn' onClick={handleClickB}>Switch To Tree Data 2</button>
       <div style={{ display: 'flex' }}>
         <div style={{ flex: 1, padding: '50px' }}>
           {useCase ? 
