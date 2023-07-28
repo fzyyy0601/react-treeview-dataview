@@ -9,4 +9,12 @@ Currently, two official plugins are available:
 
 # A tree view and data view interaction
 
+Using React.JS and antd.
 Here is a demo gif
+<img src='./src/dats/demo-v1.0.gif'>
+
+## How to run
+```
+npm install
+npm run dev
+```
